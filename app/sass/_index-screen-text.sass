@@ -1,0 +1,95 @@
+.index-screen-text
+	padding: 70px 0
+	text-align: right
+	background-color: $dark-blue
+
+	&__logo img
+		max-width: 100%
+
+	&__text
+		padding-right: 90px
+		height: 480px
+		font-size: 27px
+		color: $font-light
+
+		p
+			margin-bottom: 15px
+			&:last-of-type
+				margin-bottom: 0
+
+		ul
+			margin: 0 0 15px
+
+		.simplebar-track .simplebar-scrollbar.visible:before,
+		.simplebar-track:hover .simplebar-scrollbar:before
+			opacity: 1
+
+		.simplebar-track.vertical
+			top: 25%
+			right: 20px
+			width: 1px
+			height: 50%
+			background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0) 100%)
+			box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2)
+			opacity: 1
+
+		.simplebar-scrollbar
+			right: 0
+
+		.simplebar-scrollbar:before
+			top: 50%
+			width: 20px
+			height: 20px
+			background-color: $font-light
+			border-radius: 50%
+			box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2)
+			transform: translate(+50%, +50%)
+			cursor: pointer
+
++media-breakpoint-down(xxl)
+	.index-screen-text
+		padding: 60px 0
+
+		&__text
+			padding-right: 80px
+			font-size: 25px
+
++media-breakpoint-down(xl)
+	.index-screen-text
+		padding: 50px 0
+
+		&__text
+			padding-right: 70px
+			font-size: 22px
+
++media-breakpoint-down(lg)
+	.index-screen-text
+		padding: 50px 0
+
+		&__text
+			padding-right: 70px
+			height: 400px
+			font-size: 20px
+
++media-breakpoint-down(md)
+	.index-screen-text
+		padding: 40px 0
+
+		&__logo
+			margin-bottom: 30px
+			padding: 0 40px
+			text-align: center
+
+		&__text
+			padding-right: 50px
+			height: 350px
+			font-size: 18px
+
++media-breakpoint-down(sm)
+	.index-screen-text
+		padding: 30px 0
+
+		&__text
+			padding-right: 40px
+			height: 300px
+			font-size: 16px

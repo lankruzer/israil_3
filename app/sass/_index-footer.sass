@@ -1,0 +1,51 @@
+.footer
+	background-color: $dark-blue
+
+.block-map
+	margin: 0 auto
+	padding: 6px
+	box-sizing: border-box
+	width: 60%
+	border: 2px solid $font-light
+	transform: translateY(-50px)
+
+#map
+	width: 100%
+	height: 455px
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5)
+
+
++media-breakpoint-down(xxl)
+	.block-map
+		width: 70%
+
+	#map
+		height: 425px
+
++media-breakpoint-down(xl)
+	.block-map
+		width: 80%
+
+	#map
+		height: 400px
+
++media-breakpoint-down(lg)
+	.block-map
+		width: 90%
+
+	#map
+		height: 325px
+
++media-breakpoint-down(md)
+	.block-map
+		width: 100%
+
+	#map
+		height: 300px
+
+	.gmnoprint
+		width: 50px!important
+		height: 50px!important
+		img
+			width: 100%
+			height: 100%

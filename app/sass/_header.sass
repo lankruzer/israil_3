@@ -1,0 +1,116 @@
+.header
+	padding-bottom: 4px
+	box-sizing: border-box
+	box-shadow: 0 0 15px 10px #bfc0cb
+	background-color: $dark-blue
+
+	&__logo
+		margin-right: 20px
+		img
+			display: block
+			max-width: 325px
+			width: auto
+			height: auto
+
+	&-nav-list
+		margin: 0
+		padding: 0
+		list-style: none
+
+		&__link
+			display: flex
+			justify-content: center
+			align-items: flex-end
+			min-height: 150px
+			padding: 0 25px 25px
+			box-sizing: border-box
+			text-align: center
+			font-size: 42px
+			color: $font-light
+			transition: .25s
+			&:hover
+				color: $font-light
+				text-decoration: none
+				background-color: $light-blue
+
+		&__li_active .header-nav-list__link
+			color: $font-light
+			text-decoration: none
+			background-color: $light-blue
+
+.btn-toggle-menu
+	display: none
+	padding-top: 5px
+	border: 0
+	background-color: transparent
+	outline: none
+	&_active
+		.lines
+			background-color: transparent
+			box-shadow:  0 0 0 transparent
+			&::before,
+			&::after
+				background-color: $font-light
+
++media-breakpoint-down(xll)
+	.header
+		&-nav
+			&__logo img
+				max-width: 200px
+				width: 100%
+
+			&-list__link
+				min-height: 120px
+				padding: 0 20px 20px
+				font-size: 34px
+
++media-breakpoint-down(xl)
+	.header
+		&-nav
+			&__logo img
+				max-width: 150px
+
+			&-list__link
+				min-height: 80px
+				padding: 0 15px 15px
+				font-size: 26px
+
++media-breakpoint-down(lg)
+	.header
+		&-nav
+			&__logo img
+				max-width: 100px
+
+			&-list__link
+				min-height: 45px
+				padding: 0 10px 5px
+				font-size: 20px
+
++media-breakpoint-down(md)
+	.header
+
+		.btn-toggle-menu
+			display: inline-block
+
+		&-nav
+			&__logo img
+				max-width: 110px
+
+			&-list
+				position: fixed
+				top: -100vh
+				left: 0
+				z-index: 100
+				flex-direction: column
+				width: 100%
+				height: calc(100vh - 30px)
+				overflow: auto
+				background-color: $dark-blue
+				transition: .25s
+				&_active
+					top: 35px
+
+				&__link
+					min-height: 40px
+					padding: 0 5px 5px
+					font-size: 16px

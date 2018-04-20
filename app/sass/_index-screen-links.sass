@@ -1,0 +1,145 @@
+.index-screen-links
+	padding: 80px 0 200px
+
+.block-link
+	position: relative
+	display: block
+	margin-bottom: 170px
+	text-align: center
+	text-decoration: none
+	color: $font-light
+	&:last-of-type
+		margin-bottom: 50px
+	&:hover
+		text-decoration: none
+		color: $font-light
+
+	&::after
+		content: ''
+		position: absolute
+		top: 100%
+		left: 50%
+		margin: 0 auto
+		width: 190px
+		height: 210px
+		background: $dark-blue url("../img/arrows.png") center bottom 20% no-repeat
+		border-radius: 0 0 100px 100px
+		transform: translate(-50%, -50%)
+		box-shadow: 0 0px 35px 0 $dark
+
+	&__title
+		position: relative
+		z-index: 5
+		display: inline-block
+		vertical-align: top
+		margin: 0 auto
+		padding: 5px 15px
+		box-sizing: border-box
+		min-width: 375px
+		text-align: center
+		font-size: 48px
+		font-weight: 600
+		color: $font-light
+		background-color: $dark-blue
+		box-shadow: 0 5px 25px 1px $dark
+		transform: translateY(+50%)
+
+	&__img
+		position: relative
+		z-index: 4
+		display: block
+		width: 100%
+		img
+			display: block
+			width: 100%
+			height: auto
+
++media-breakpoint-down(xll)
+	.index-screen-links
+		padding: 70px 0 180px
+
+	.block-link
+		&::after
+			width: 180px
+			height: 200px
+			background-size: 50px
+
+		&__title
+			font-size: 40px
+
++media-breakpoint-down(xxl)
+	.index-screen-links
+		padding: 60px 0 160px
+
+	.block-link
+		margin-bottom: 140px
+
+		&::after
+			width: 160px
+			height: 180px
+			background-size: 45px
+
+		&__title
+			font-size: 36px
+
++media-breakpoint-down(xl)
+	.index-screen-links
+		padding: 50px 0 140px
+
+	.block-link
+		margin-bottom: 120px
+
+		&::after
+			width: 140px
+			height: 160px
+			background-size: 40px
+
+		&__title
+			font-size: 32px
+
++media-breakpoint-down(lg)
+	.index-screen-links
+		padding: 40px 0 120px
+
+	.block-link
+		margin-bottom: 100px
+
+		&::after
+			width: 120px
+			height: 140px
+			background-size: 30px
+
+		&__title
+			font-size: 28px
+
++media-breakpoint-down(md)
+	.index-screen-links
+		padding: 50px 0 100px
+
+	.block-link
+		margin-bottom: 80px
+
+		&::after
+			width: 100px
+			height: 120px
+			background-size: 25px
+
+		&__title
+			min-width: auto
+			font-size: 24px
+
++media-breakpoint-down(sm)
+	.index-screen-links
+		padding: 40px 0 80px
+
+	.block-link
+		margin-bottom: 60px
+
+		&::after
+			width: 80px
+			height: 100px
+			background-size: 20px
+
+		&__title
+			min-width: auto
+			font-size: 20px

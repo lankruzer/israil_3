@@ -1,0 +1,125 @@
+@@include('./modules/_head.html' , {
+pageTitle: 'צור קשר'
+})
+
+<header class="header">
+
+	<div class="container">
+
+		<nav class="header-nav d-flex justify-content-between align-items-center">
+
+			<button type="button" class="btn btn-toggle-menu"><span class="lines"></span></button>
+
+			<ul class="header-nav-list d-flex">
+
+				<li class="header-nav-list__li">
+					<a href="index.html" class="header-nav-list__link">ראשי</a>
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="about.html" class="header-nav-list__link">אודות</a>
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="marketing-projects.html" class="header-nav-list__link">פרויקטים בשיווק</a>
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="complete-projects.html" class="header-nav-list__link">פרויקטים שאוכלסו</a>
+				</li>
+
+				<li class="header-nav-list__li header-nav-list__li_active">
+					<a href="contacts.html" class="header-nav-list__link">צור קשר</a>
+				</li>
+
+			</ul>
+
+			<a href="index.html" class="header-nav__logo">
+				<img src="img/logo.png" alt="">
+			</a>
+
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="main">
+
+	<div class="contacts">
+
+		<div class="container">
+
+			<div class="contacts__text">ברקן - עם ועולמו 3, ירושלים | 02-6515255</div>
+
+		</div>
+
+		<div class="contacts-block">
+
+			<div class="container">
+
+				<div class="row d-flex flex-wrap justify-content-end">
+					<div class="col-12 col-md-6">
+
+						<form action="#" method="post" class="contacts-form">
+
+							<label class="contacts-form-label">
+								<span class="contacts-form-label__span">שם:</span>
+								<input type="text" class="contacts-form-label__input" required>
+							</label>
+
+							<label class="contacts-form-label">
+								<span class="contacts-form-label__span">טלפון:</span>
+								<input type="tel" class="contacts-form-label__input" required>
+							</label>
+
+							<label class="contacts-form-label">
+								<span class="contacts-form-label__span">דוא״ל:</span>
+								<input type="email" class="contacts-form-label__input" required>
+							</label>
+
+							<div class="text-center">
+								<button type="submit" class="btn">שלח</button>
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div class="container">
+			
+			<ul class="contacts-soc d-flex">
+				
+				<li class="contacts-soc__li">
+					<a href="#" class="contacts-soc__link" target="_blank">
+						<img src="img/icon-fb.png" alt="">
+					</a>
+				</li>
+
+				<li class="contacts-soc__li">
+					<a href="#" class="contacts-soc__link" target="_blank">
+						<img src="img/icon-gmail.png" alt="">
+					</a>
+				</li>
+
+				<li class="contacts-soc__li">
+					<a href="#" class="contacts-soc__link" target="_blank">
+						<img src="img/icon-phone.png" alt="">
+					</a>
+				</li>
+				
+			</ul>
+			
+		</div>
+
+	</div>
+
+</main>
+
+@@include('./modules/_footer.html')
+
