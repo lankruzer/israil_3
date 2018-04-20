@@ -1,0 +1,110 @@
+.project
+	padding: 80px 0 200px
+
+	&__logo img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		width: auto
+		height: auto
+
+	&__text
+		text-align: right
+		font-size: 21px
+		p
+			margin-bottom: 0
+
+	.slider-for
+		position: relative
+		margin: 80px 0 130px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 20px
+			left: 50%
+			width: 50%
+			height: 50px
+			border-radius: 50%
+			box-shadow: 0 0 250px 0 rgba(0, 0, 0, 1)
+			transform: translateX(-50%)
+
+		*
+			outline: none
+
+		&__slide
+
+			img
+				display: block
+				width: 100%
+				height: auto
+
+	.slider-nav
+		*
+			outline: none
+
+		&__slide
+			box-sizing: border-box
+			padding: 0 15px
+			cursor: pointer
+			img
+				display: block
+				width: 100%
+				height: auto
+				max-width: 100%
+
++media-breakpoint-down(xll)
+	.project
+		padding: 80px 0 180px
+
+		.slider-for
+			margin: 60px 0 100px
+
++media-breakpoint-down(xxl)
+	.project
+		padding: 80px 0 160px
+
+		.slider-for
+			margin: 50px 0 80px
+
++media-breakpoint-down(xl)
+	.project
+		padding: 70px 0 140px
+
+		.slider-for
+			margin: 40px 0 60px
+
++media-breakpoint-down(lg)
+	.project
+		padding: 60px 0 120px
+
+		&__text
+			font-size: 20px
+
+		.slider-for
+			margin: 30px 0 50px
+
++media-breakpoint-down(md)
+	.project
+		padding: 50px 0 100px
+
+		&__text
+			font-size: 18px
+
+		.slider-for
+			margin: 30px 0 40px
+
++media-breakpoint-down(sm)
+	.project
+		padding: 50px 0 70px
+
+		&__logo
+			margin-bottom: 20px
+			text-align: center
+			img
+				max-width: 90%
+
+		.slider-for
+			margin: 30px 0 20px
+
+		.slider-nav__slide
+			padding: 5px

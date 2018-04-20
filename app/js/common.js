@@ -17,6 +17,50 @@ $(function() {
 	}
 	// /load map
 
+	// project slider
+	if (document.querySelector('.project')) {
+		$('.slider-for').slick({
+			rtl: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			draggable: false
+		});
+
+		$('.slider-nav').slick({
+			rtl: true,
+			arrows: false,
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			focusOnSelect: true,
+			asNavFor: '.slider-for',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 4
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 580,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
+
+		});
+	}
+	// /project slider
+
 });
 
 // init map
