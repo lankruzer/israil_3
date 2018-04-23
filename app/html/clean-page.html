@@ -1,0 +1,61 @@
+@@include('./modules/_head.html' , {
+pageTitle: 'ראשי'
+})
+
+<header class="header">
+
+	<div class="container">
+
+		<nav class="header-nav d-flex justify-content-between align-items-center">
+
+			<button type="button" class="btn btn-toggle-menu"><span class="lines"></span></button>
+
+			<ul class="header-nav-list d-flex">
+
+				<li class="header-nav-list__li header-nav-list__li_active">
+					<a href="index.html" class="header-nav-list__link">ראשי</a>
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="marketing-projects.html" class="header-nav-list__link">פרויקטים בשיווק</a>
+
+					<button class="dropdown-toggle"></button>
+
+					<ul class="dropdown-list">
+						<li class="dropdown-list__li">
+							<a href="marketing-projects.html" class="dropdown-list__link">ברקן בכוכב יאיר</a>
+						</li>
+						<li class="dropdown-list__li">
+							<a href="project.html" class="dropdown-list__link">גבעת התמר</a>
+						</li>
+					</ul>
+
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="complete-projects.html" class="header-nav-list__link">פרויקטים שאוכלסו</a>
+				</li>
+
+				<li class="header-nav-list__li">
+					<a href="contacts.html" class="header-nav-list__link">צור קשר</a>
+				</li>
+
+			</ul>
+
+			<a href="index.html" class="header-nav__logo">
+				<img src="img/logo.png" alt="">
+			</a>
+
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="main">
+
+</main>
+
+@@include('./modules/_footer.html')
+
+
