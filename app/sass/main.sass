@@ -40,8 +40,10 @@ body
 b, strong
 	font-weight: bold
 
-.main_white
-	background-color: #fff
+.main
+	padding-top: 158px
+	&_white
+		background-color: #fff
 
 @import "elems"
 
@@ -56,6 +58,18 @@ b, strong
 @import "project"
 @import "marketing-projects"
 
++media-breakpoint-down(xll)
+	.main
+		padding-top: 122px
 
++media-breakpoint-down(xl)
+	.main
+		padding-top: 88px
 
-@import "media" // Always at the end
++media-breakpoint-down(lg)
+	.main
+		padding-top: 53px
+
++media-breakpoint-down(md)
+	.main
+		padding-top: 40px

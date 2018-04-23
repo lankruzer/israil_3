@@ -1,11 +1,42 @@
 $(function() {
 
+	// menu fixed
+	window.onscroll = function() {
+		myFunction()
+	};
+
+	var header = document.querySelector(".header");
+
+	var sticky = header.offsetTop;
+
+	myFunction();
+
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("header_fixed");
+		} else {
+			header.classList.remove("header_fixed");
+		}
+	}
+	// /menu fixed
+
 	// mobile menu toggle
 	$('.btn-toggle-menu').click(function () {
 		$(this).toggleClass('btn-toggle-menu_active');
 		$('.header-nav-list').toggleClass('header-nav-list_active');
 	});
 	// /mobile menu toggle
+
+	// mobile dropdown-toggle
+	if (document.querySelector('.dropdown-toggle')) {
+
+		$('.dropdown-toggle').click(function () {
+			$(this).toggleClass('dropdown-toggle_active');
+			$(this).parent().find('.dropdown-list').slideToggle(250)
+		})
+
+	}
+	// /mobile dropdown-toggle
 
 	// load map
 	if (document.getElementById('map')) {
@@ -71,15 +102,15 @@ function initMap() {
 		center: uluru
 	});
 
-	var image;
+	var image = 'img/new-map-mark.png';
 
-	if ($(window).width() > 1400) {
-		image = 'img/map-mark-xxl.png';
-	} else if ($(window).width() > 992) {
-		image = 'img/map-mark-xl.png';
-	} else {
-		image = 'img/map-mark-xs.png';
-	}
+	// if ($(window).width() > 1400) {
+	// 	image = 'img/map-mark-xxl.png';
+	// } else if ($(window).width() > 992) {
+	// 	image = 'img/map-mark-xl.png';
+	// } else {
+	// 	image = 'img/map-mark-xs.png';
+	// }
 	var marker = new google.maps.Marker({
 		position: uluru,
 		map: map,
