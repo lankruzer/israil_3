@@ -1,0 +1,37 @@
+.wpcf7-form-control-wrap
+	position: static!important
+
+.wpcf7-form.contacts-form
+	position: relative
+
+div.wpcf7-response-output
+	margin: 15px 0 10px
+
+span.wpcf7-not-valid-tip
+	position: absolute!important
+	width: 100%!important
+	text-align: center!important
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing
+	position: absolute
+	width: 100%
+	text-align: center
+
++media-breakpoint-down(md)
+	div.wpcf7-acceptance-missing,
+	div.wpcf7-validation-errors
+		position: static
+
+	.contacts-form-label
+		margin-bottom: 25px
+
++media-breakpoint-down(sm)
+	span.wpcf7-not-valid-tip
+		position: relative!important
+
+	.contacts-form-label
+		margin-bottom: 10px
+
+	.contacts-form-label__input
+		width: 100%

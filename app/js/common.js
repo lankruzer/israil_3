@@ -102,7 +102,7 @@ function initMap() {
 		center: uluru
 	});
 
-	var image = 'img/new-map-mark.png';
+	var image = '/wp-content/themes/abarkan/assets/img/new-map-mark.png';
 
 	// if ($(window).width() > 1400) {
 	// 	image = 'img/map-mark-xxl.png';
